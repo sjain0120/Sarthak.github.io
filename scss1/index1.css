@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body {
+  background-color: #0b0b0b;
+  font-family: "Outfit", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --gradient: linear-gradient(to right, #f1ed10, #4dee52);
+}
+
+::-webkit-scrollbar {
+  background-color: #0b0b0b;
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4dee52;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+  height: 60vh;
+}
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.hero .content .title h1 {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3vw;
+}
+.hero .image {
+  position: relative;
+  bottom: 0;
+  height: 50vh;
+  width: 50vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 2rem 0;
+}
+.navbar .brand__container {
+  display: flex;
+}
+.navbar .brand__container .brand h2 span {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  color: #45b649;
+}
+.navbar .brand__container .toggle {
+  display: none;
+}
+.navbar .links ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.navbar .links ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar .links ul li a:hover {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar .links ul li i:hover {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar .links ul button {
+  padding: 0.5rem;
+}
+
+.gradient {
+  background: var(--gradient);
+}
+
+.defaultMargin {
+  margin: 0 14rem;
+}
+
+button {
+  color: white;
+  padding: 1rem 1.8rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to right, #dce35b, #45b649);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #0b0b0b inset;
+  border: solid 4px transparent;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}/*# sourceMappingURL=index1.css.map */
