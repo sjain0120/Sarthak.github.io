@@ -22,3 +22,29 @@ button {
     align-items: center;
     cursor: pointer; 
 }
+.spring {
+    display: flex;
+    align-items: center;
+    margin: 6rem 0;
+    .coil {
+        border-top: #ffffff dashed 0.1rem;
+        width: 49.75%;
+    }
+    .bar {
+        width: 0.5%;
+        height: 7rem; 
+    }
+}
+.spring.right {
+    flex-direction: row-reverse;
+}
+.title__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+    text-align: center;
+    h2 {
+        color: #45b649;
+    }
+}
