@@ -2,7 +2,13 @@
     display: grid;
     grid-template-columns: 50% 50%;
     overflow: hidden;
-    height: 60vh;
+    height: 50vh;
+    .image{
+        position: relative;
+        bottom: 0;
+        height: 60vh;
+        width: 70vw;
+    }
     .content {
         display: flex;
         flex-direction: column;
@@ -16,11 +22,5 @@
             }
         }
     }
-    .image{
-        position: relative;
-        bottom: 0;
-        height: 50vh;
-        width: 50vw;
-        object-fit: cover;
-    }
+    
 }
